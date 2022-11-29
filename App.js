@@ -7,15 +7,17 @@ import Login from './src/pages/Login';
 import Home from './src/pages/Home';
 
 
+
 const Stack = createStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-    <Stack.Navigator screenOptions={{headerShown: false}}>
+    <Stack.Navigator  screenOptions={{headerShown: false}}>
       <Stack.Screen name="Splash" component={Splash} />
       <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="Home" component={Home} />
+
     </Stack.Navigator>
   </NavigationContainer>
   );

@@ -1,11 +1,8 @@
 import React from 'react';
 import { FlatList } from 'react-native';
 import { Image, Icon,  Buttonwatch, Text, Item, ContainerButtons} from './styles';
-const  Caroucelo= ( { list, title } ) => {
-
-  
+const  Caroucele= ( { list } ) => {
  return (
-  
     <FlatList
     data={list}
     horizontal
@@ -16,11 +13,11 @@ const  Caroucelo= ( { list, title } ) => {
       return (     
          <Item>
 
-        <Image source={{uri: "https://br.web.img2.acsta.net/medias/nmedia/18/91/08/82/20128877.JPG"}}/>
+        <Image source={{uri: "https://www.cafecomfilme.com.br/media/k2/items/cache/620ba7bb730e2fa7c5bcf4375653194e_XL.jpg?t=20171108_152038"}}/>
         <ContainerButtons>
         <Icon name="share" size={40} color="white" />
         <Buttonwatch>
-        <Icon  name="controller-play" size={20} color="black" style={{marginRight: 5}} />
+        <Icon name="controller-play" size={20} color="black" style={{marginRight: 5}} />
        <Text>Assistir</Text>
         </Buttonwatch>
         <Icon name="info-with-circle" size={40} color="white" />
@@ -30,4 +27,4 @@ const  Caroucelo= ( { list, title } ) => {
     />
   );
 };
-export default Caroucelo;
+export default Caroucele;

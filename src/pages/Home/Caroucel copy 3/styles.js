@@ -8,8 +8,8 @@ export const Image = styled.Image.attrs({
     resizeMode: "stretch"
 })`
 width: 80%
-height: 160%
-margin-left: 35px;
+height: 85%
+margin-left: 40px;
 
 `;
 

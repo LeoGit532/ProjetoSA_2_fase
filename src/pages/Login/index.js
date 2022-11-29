@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {useState} from 'react';
 import { Container, Logo, ImageBackground, Input,  ContainerInput, Button, Text, ContainerTexts, Form } from './styles';
 import logo from '../../assets/logo.png';
 import imageBackground from '../../assets/login.jpg'
@@ -27,7 +27,9 @@ return (
        <Input placeholder="E-mail" placeholderTextColor="white"/>
        </ContainerInput>
        <ContainerInput>
-       <Input placeholder="Senha" placeholderTextColor="white"/>
+       <Input label='password'placeholder="Senha"
+       secureTextEntry={true} placeholderTextColor="white"  />
+       
        </ContainerInput>
         <Button onPress={handlelogin}>
             <Text>LOGIN</Text>

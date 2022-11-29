@@ -3,10 +3,10 @@ import { View } from 'react-native';
 import { ContainerItem, Text, Image } from 'react-native';
 import { FlatList } from 'react-native';
 
-const List= ({ list}) => {
+const List= ({ list, title}) => {
  return <>
  
- <Text>Filmes de Ação</Text>
+ <Text>{title}</Text>
           <FlatList 
           data={list}
           keyExtractor={(item, index)=> `${index}`}
